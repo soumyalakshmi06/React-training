@@ -1,0 +1,136 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #a7cde7, #d2b5de);
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(232, 222, 222, 0.15);
+}
+.container .title{
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+}
+.container .title::before{
+  position: fixed;
+  height: 20px;
+  width: 200px;
+  border-radius: 2px;
+ 
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 20px;
+  width: calc(100%);
+}
+form .input-box span.details{
+  display: contents;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+
+form .input-age span.age{
+ font-weight: 500;
+ display: contents;
+ margin-bottom: 5px;
+}
+
+.age .input-age option{
+    background-color: hsl(200, 8%, 92%);
+    font-size: 14px;
+    position: relative;
+    display: inline;
+    padding: 16px;
+    cursor: pointer;
+}
+
+form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px  ;
+   justify-content: space-between;
+ }
+form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+form .category label .rad{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#rad-1:checked ~ .category label .one,
+ #rad-2:checked ~ .category label .two,
+ #rad-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #f1eeee;
+ }
+form input[type="radio"]{
+   display: none;
+ }
+ li {
+    margin-bottom: 0.5rem;
+}
+
+form .dob span.dateofbirth{
+    display: contents;
+   font-weight: 500;
+  margin-bottom: 5px;
+    
+}
+
+
+form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+form .button input{
+   height: 100%;
+   width: 100%;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   background: linear-gradient( #71b7e6, #9b59b6);
+ }
+form .button input:hover{
+  background: linear-gradient( #71b7e6, #9b59b6);
+  }
